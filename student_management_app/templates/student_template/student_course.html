@@ -1,0 +1,84 @@
+{% extends 'student_template/base_template.html' %}
+
+{% block page_title %}
+    Result
+{% endblock page_title %}
+
+{% block main_content %}
+
+{% load static %}
+
+<section class="content">
+        <div class="container-fluid">
+
+            
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Courses Proposed</h3>
+                        </div>
+
+                        <div class="card-body">
+                           <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                    <tr>
+                                        <th>Prerequisites</th>
+                                        <th>Course Code</th>
+                                        <th>Course Title</th>
+                                        <th>Course Unit</th>
+                                        <th>Lecturer in charge</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tr>
+                                        <td>CYS 401</td>
+                                        <td>CYS 502</td>
+                                        <td>Cyber Law</td>
+                                        <td>2</td>
+                                        <td>Prof. Traunman</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>CSC 303</td>
+                                        <td>CYS 506</td>
+                                        <td>Expert System</td>
+                                        <td>2</td>
+                                        <td>Prof. Hashirama</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>CSC 302</td>
+                                        <td>CSC 502</td>
+                                        <td>Design Pattern</td>
+                                        <td>3</td>
+                                        <td>Prof. Peter</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>CYS 408</td>
+                                        <td>CYS 510</td>
+                                        <td>Pentesting</td>
+                                        <td>2</td>
+                                        <td>Prof. Bruno</td> 
+                                    </tr>
+                                    
+                                </table>
+
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.container-fluid -->
+      </section>
+
+  {% endblock main_content %}
+
+{% block custom_js %}
+
+{% endblock custom_js %}
